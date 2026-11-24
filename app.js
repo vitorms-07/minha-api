@@ -52,7 +52,7 @@ res.status(200).json(produtos);
 app.get('/produtos/:id', (req, res) => {
 // req.params.id vem como STRING — converter para número!
 
-JavaScript
+
 const id = parseInt(req.params.id);
 // find() percorre o array e retorna o primeiro que satisfaz
 const produto = produtos.find(p => p.id === id);
